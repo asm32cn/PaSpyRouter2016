@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<config>
+	<strOutputFile strFile="PaSpyRouter2016CS20.resources" />
+	<define>
+		<Icon strFile="icon1.ico" strResourceName="this.ico" />
+		<Image strFile="res-button-png/res-button-01.png" strResourceName="res-button-01.png" />
+		<Image strFile="res-button-png/res-button-02.png" strResourceName="res-button-02.png" />
+		<Image strFile="res-button-png/res-button-03.png" strResourceName="res-button-03.png" />
+		<Image strFile="res-button-png/res-button-04.png" strResourceName="res-button-04.png" />
+		<Image strFile="res-button-png/res-button-05.png" strResourceName="res-button-05.png" />
+		<Image strFile="res-button-png/res-button-06.png" strResourceName="res-button-06.png" />
+		<Image strFile="res-button-png/res-button-07.png" strResourceName="res-button-07.png" />
+		<String strContent="PaSpyRouter2016CS20" strResourceName="string.name" />
+	</define>
+</config>
