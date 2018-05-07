@@ -1,0 +1,119 @@
+<script type="text/javascript">
+var DHCPDynList=new Array(
+"MIPAD-Asm32",
+"98-FA-E3-44-F2-DB",
+"192.168.1.88",
+"Permanent",
+"Asm32-PC",
+"00-1E-4F-57-25-BA",
+"192.168.1.66",
+"Permanent",
+"android-d4a89eb1e295ab93",
+"58-7F-66-81-9F-2B",
+"192.168.1.100",
+"00:03:06",
+"PASCAL",
+"DC-0E-A1-5E-1D-65",
+"192.168.1.32",
+"Permanent",
+"android-e607369d6874df2a",
+"68-A0-F6-57-9C-1D",
+"192.168.1.102",
+"01:23:26",
+"android-b14c50c9ab3e3d3a",
+"D0-22-BE-D4-8A-88",
+"192.168.1.103",
+"01:46:15",
+"habonisi",
+"A0-ED-CD-34-6A-E0",
+"192.168.1.104",
+"01:46:36",
+"android-f81dcd65dcc36dd1",
+"64-A6-51-E7-77-FA",
+"192.168.1.105",
+"01:50:23",
+"android-b3f3f7408064b40c",
+"60-E7-01-BF-E7-91",
+"192.168.1.106",
+"01:50:49",
+"iPhone",
+"68-96-7B-76-55-5F",
+"192.168.1.107",
+"01:51:57",
+"android-f07e636234f0f6d",
+"F4-E3-FB-F6-7A-7D",
+"192.168.1.131",
+"01:56:14",
+"android-4a63aba09d9b98a6",
+"04-02-1F-04-D1-48",
+"192.168.1.108",
+"01:56:52",
+0,0 );
+</script>
+<script type="text/javascript">
+var DHCPDynPara=new Array(
+12,
+4,
+0,0 );
+</script>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="wed, 26 Feb 1997 08:21:57 GMT">
+<link href="/dynaform/css_main.css" rel="stylesheet" />
+<script src="/dynaform/common.js" type="text/javascript"></script>
+<script type="text/javascript"><!--
+if(window.parent == window){window.location.href="http://192.168.1.1";}
+function Click(){return false;}
+document.oncontextmenu=Click;
+function doPrev(){history.go(-1);}
+//--></script>
+
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+</head>
+<body>
+<center><form action="AssignedIpAddrListRpm.htm" enctype="multipart/form-data" method="get">
+<!--外框表格-->
+<table width="540" border="0" cellspacing="0" cellpadding="0">
+<tr><td width="7" class="title"><img src="/images/arc.gif" width="7" height="24"></td>
+<td width="533" align="left" valign="middle" class="title">客户端列表</td>
+</tr><tr><td colspan="2"><table width="540" border="0" cellspacing="0" cellpadding="0">
+<tr><td class="vline" rowspan="15"><br></td>
+<td width="538">
+<!--内容开始-->
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0" class="space">
+<tr><td align="center" width="500">
+<!-- added, -->
+<script language="JavaScript">
+if (DHCPDynPara[0] > 0)	{
+var row = 0;
+var i = 0;
+var j;
+document.write('<TR><TD><table border=1 align="center" cellpadding="0" cellspacing="0" class="space">');
+document.write('<TR align="center"><TD  width="30">ID</TD><TD >客户端名</TD><td  width="120" nowrap>MAC地址</td><TD  width="90" nowrap>IP地址</TD><TD >有效时间</TD></TR>');
+for(i = 0; i < DHCPDynPara[0]; i++)
+{	
+	j = i+1;
+	row = i * DHCPDynPara[1];
+	document.write('<tr align="center"><td >' + j + '</td>');
+	document.write('<td >' + DHCPDynList[row] + '</td>');
+	document.write('<td >' + DHCPDynList[row+1] + '</td>');
+	document.write('<td >' + DHCPDynList[row+2] + '</td>');
+	if (DHCPDynList[row+3] != "Permanent" )
+		document.write('<td >' + DHCPDynList[row+3] + '</TD></TR>');
+	else
+		document.write('<td >永 久</TD></TR>');
+}
+document.write('</table></TD></TR>');
+}
+else	{
+document.write('<TR><TD class=info1>当前客户端列表为空</TD></TR>');}
+</script>
+</td><tr>
+</table>
+<!--内容结束-->
+</td><td class="vline" rowspan="15"><br></td></tr>
+<tr><td  class="hline"><img src="/images/empty.gif" width="1" height="1"></td></tr>
+<tr><td height="30" class="tail">
+&nbsp;<input name="Refresh" type="submit" class="button" value="刷 新">
+</td></tr><tr><td class="hline"><img src="/images/empty.gif" width="1" height="1"></td>
+</tr></table></td></tr></table>
+</form></center></body><head><meta http-equiv="pragma" content="no-cache"></head></html>
